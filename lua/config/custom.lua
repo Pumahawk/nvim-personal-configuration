@@ -1,5 +1,6 @@
 -- Vim basic configurazion
 vim.wo.relativenumber = true
+vim.cmd.colorscheme "catppuccin"
 
 -- Paste
 vim.cmd('xnoremap <leader>p "_dP')

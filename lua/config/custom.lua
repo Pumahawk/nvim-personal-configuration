@@ -1,5 +1,6 @@
 -- Vim basic configurazion
 vim.wo.relativenumber = true
+vim.wo.number = true
 vim.cmd.colorscheme "catppuccin"
 
 -- Paste

@@ -3,4 +3,5 @@ require("config.treesitter")
 require("config.telescope")
 require("mason").setup()
 require("config.custom")
-
+require("config.lsp-zero")
+require("config.lsp-custom")

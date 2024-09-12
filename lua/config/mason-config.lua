@@ -1,26 +1,28 @@
 -- Mason configuration
 
 require("mason").setup()
-require("mason-lspconfig").setup {
-	ensure_installed = {
-		-- Lua 
-		"lua_ls",
+require("mason-lspconfig").setup{
+	automatic_installation = true,
+} 
 
-		-- Web Develop
-		"html",
-		"ts_ls",
-		"eslint",
-		"angularls",
+-- START LSP Configuration
+--
+-- Java setup
+require('lspconfig').jdtls.setup({})
 
-		-- Docker
-		"dockerls",
-		"docker_compose_language_service",
+-- Web setup
+require'lspconfig'.html.setup{}
+require'lspconfig'.ts_ls.setup{}
+require'lspconfig'.eslint.setup{}
+require'lspconfig'.angularls.setup{}
 
-		-- Go
-		"gopls",
+-- Docker
+require'lspconfig'.dockerls.setup{}
+require'lspconfig'.docker_compose_language_service.setup{}
 
-		-- Java
-		"jdtls",
-	},
-}
+-- Go
+require'lspconfig'.gopls.setup{}
+
+-- Lua
+require'lspconfig'.lua_ls.setup{}
 
